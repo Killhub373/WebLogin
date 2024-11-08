@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Sederhana</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="website icon" type="url" href="https://fydn.imgix.net/m%2Fgen%2Fart-print-square-p1%2Fab9939f6-2e08-4832-8b3c-789991e75afb.jpg?auto=format%2Ccompress&q=75">
+</head>
+
+<body>
+
+    <header>
+        <div class="box1 fade-in">
+            <div class="logo">LayananKami</div>
+            <nav>
+                <a href="Home.html" class="h1">Halaman 1</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container fade-in">
+
+        <div class="light" id="leftLightContainer" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Solid_black.svg/512px-Solid_black.svg.png');">
+            <img id="leftLight" src="pic_bulboff.jpg" alt="Left Light">
+            <p id="leftStatus">Lampu Mati</p>
+            <p id="leftOnTime" style="display: none;">Waktu Nyala: </p>
+            <p id="leftOffTime" style="display: none;">Waktu Mati: </p>
+            <button class="tombol" id="leftButton" onclick="toggleLeftLight()">Nyalakan Lampu</button>
+        </div>
+
+        <div class="light1" id="rightLightContainer" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Solid_black.svg/512px-Solid_black.svg.png');">
+            <img id="rightLight" src="pic_bulboff.jpg" alt="Right Light">
+            <p id="rightStatus">Lampu Mati</p>
+            <p id="rightOnTime" style="display: none;">Waktu Nyala: </p>
+            <p id="rightOffTime" style="display: none;">Waktu Mati: </p>
+            <div class="tengah">
+                <button class="tombol" onclick="toggleRightLight('on')">Nyalakan Lampu</button>
+                <button class="tombol" onclick="toggleRightLight('off')">Matikan Lampu</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="card-container fade-in">
+        <h2>Cek Umur</h2>
+        <div class="sec1">
+            <input class="plc" type="text" id="ageInput" placeholder="Masukkan Usia" oninput="validateAgeInput(this)" inputmode="numeric">
+            <button class="tombol1" onclick="checkAge()">Cek Umur</button>
+            <p id="ageResult"></p>
+        </div>
+    </div>
+
+
+    <div class="card-container fade-in">
+        <h2>Tebak Angka (1-10)</h2>
+        <div class="sec2">
+            <input class="plc" type="text" id="guessNumberInput" placeholder="Tebak Angka (1-10)" oninput="validateGuessInput(this)">
+            <button class="tom2" onclick="guessNumber()">Cek Tebakan</button>
+            <p id="guessResult"></p>
+        </div>
+    </div>
+
+    <div class="card-container fade-in">
+        <div class="calculator">
+            <h2>KalKulator Sederhana</h2>
+            <div class="sec3">
+
+                <div class="input-section">
+                    <input class="plc" type="text" id="angka1" placeholder="Masukkan Angka Pertama">
+                    <input class="plc" type="text" id="angka2" placeholder="Masukkan Angka Kedua">
+                </div>
+
+
+                <div class="operation-section">
+                    <select id="operation" class="plc">
+                        <option value="+">Tambah</option>
+                        <option value="-">Kurang</option>
+                        <option value="/">Bagi</option>
+                        <option value="*">Kali</option>
+                    </select>
+                </div>
+
+                <button class="tom3" onclick="calculate()">Hasil</button>
+                <button class="tom3" onclick="clearInput()">Hapus</button>
+
+            </div>
+        </div>
+        <div class="result-section fade-in">
+            <span id="hasil"></span>
+        </div>
+
+    </div>
+    <div class="card-container fade-in">
+        <h2>Temperature Converter</h2>
+        <div class="sec4">
+            <input class="plc" type="text" id="tempInput" placeholder="Masukkan Suhu" oninput="validateTemperatureInput(this)">
+            <select class="plc" id="tempUnit">
+            <option value="CtoF">Celsius ke Fahrenheit</option>
+            <option value="FtoC">Fahrenheit ke Celsius</option>
+            <option value="CtoK">Celsius ke Kelvin</option>
+            <option value="KtoC">Kelvin ke Celsius</option>
+            <option value="FtoK">Fahrenheit ke Kelvin</option>
+            <option value="KtoF">Kelvin ke Fahrenheit</option>
+        </select>
+            <button class="tom4" onclick="convertTemperature()">Konversi</button>
+            <div class="hasil fade-in">
+                <span id="tempResult"></span>
+            </div>
+
+        </div>
+    </div>
+    <script src="script2.js"></script>
+   
+</body>
+
+</html>

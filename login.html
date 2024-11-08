@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="website icon" type="url" href="https://fydn.imgix.net/m%2Fgen%2Fart-print-square-p1%2Fab9939f6-2e08-4832-8b3c-789991e75afb.jpg?auto=format%2Ccompress&q=75">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form id="signUpForm">
+                <h1>Buat Akun</h1>
+
+                <input type="text" placeholder="Namamu" id="signup-name">
+                <input type="email" placeholder="contoh@lunami.gb.id" id="signup-email">
+                <input type="text" placeholder="Password" id="signup-password" class="password-input">
+                <div style="text-align:center;">    
+                    <p style="font-size: 13px;">
+                        Malas Daftar? Klik
+                        <a href="https://myimagination122.blogspot.com/" style="color: rgb(113, 31, 168);" >
+                            Disini
+                        </a>
+                    </p>
+                </div>
+                <button type="submit">Daftar</button><br><br><br>
+                <span>Sosial Media Kami</span>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/spectrefresh/" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@spectrefresh" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://myimagination122.blogspot.com/" class="icon"><i class="fa-brands fa-blogger"></i></a>
+                    <a href="https://x.com/SpectreFresh" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                
+           
+            </form>
+        </div>
+        <div id="sign-in1" class="form-container sign-in">
+            <form id="signInForm">
+                <div>
+                    <h1>Masuk</h1>
+                </div>
+                
+                <input type="email" placeholder="contoh@lunami.gb.id" id="signin-email">
+                <div class="password-container">
+                    <input type="password" placeholder="Password" id="signin-password" class="password-input">
+                    <i class="fa-solid fa-eye toggle-password" onclick="togglePasswordVisibility('signin-password')">
+                    </i>
+                </div>
+                <div style="text-align:center;">    
+                    <p style="font-size: 13px;">Lupa Password? Klik
+                    <a href="https://youtu.be/D_T-Q1KCLGQ?si=XkYikGmdM5mRYDw3" style="color: rgb(113, 31, 168);" >
+                        Password
+                    </a> Untuk Mendapatkannya
+                </p></div>
+            
+                <button type="submit">Masuk</button><br><br><br>
+             <span>Sosial Media Kami</span>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/spectrefresh/" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@spectrefresh" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://myimagination122.blogspot.com/" class="icon"><i class="fa-brands fa-blogger"></i></a>
+                    <a href="https://x.com/SpectreFresh" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+               
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Selamat Datang Bung!</h1>
+                    <p>Daftar Email Kami Biar Bisa Masuk Ke Laman</p>
+                    <button class="hidden" id="login">Masuk</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Selamat Datang Kembali Teman!</h1>
+                    <p>Masukkan Email dan Password yang Sudah Terdaftar Ya.
+                       Kalo Belum Punya Akun Segera Daftar</p>
+                    
+                    <button class="hidden" id="register">Daftar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
